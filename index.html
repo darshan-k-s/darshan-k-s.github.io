@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Darshan K S portfolio">
+    <meta name="description" content="Portfolio | Darshan K S">
+    <meta name="author" content="Darshan K S">
+    <title>Darshan K S</title>
+    <link rel="icon" href="./images/titlebar.gif" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/1c591452af.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="scroll-indicator">
+        <div class="scroll-progress"></div>
+    </div>
+    <article class="header">
+        <div class="intro">
+            <h1>Hi <span id="hand">👋</span> , I'm <span><nobr>Darshan K S</nobr></span></h1>
+            <p class="typing"><span id="typingtxt"></span><span id="cursor">|</span></p>
+            <!-- <button>Change Theme</button> -->
+        </div>
+        <div class="topbg">
+            <div class="bottom-left"></div>
+            <div class="triangle"></div>
+            <div class="left-cover"></div>
+            <div class="right-top"></div>
+            <div class="left-top"></div>
+        </div>
+        <i class="fas fa-angle-down "></i>
+    </article>
+    <div class="headeroverlay">
+        <div class="toplinks">
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#footer">Contact</a>
+        </div>
+    </div>
+    <main id="main">
+        <section class="about">
+            <h2>About me</h2>
+            <div class="aboutunderline underline"></div>
+            <div class="about-container">
+                <p><span class="hey">Hey, I'm <b>Darshan</b>.</span><br> I am an 18-year-old front-end web developer, and a Robotics enthusiast🤖 currently studying at The Manipal Institute of Technology, Manipal. I like solving problems, creating aesthetic UX designs and exploring new technologies and love ice cream. I'm currently working on becoming a full-stack web developer.<br><br>I'm constantly looking to meet new people and would like to do some interesting work.<span>&#127846;</span><br>
+                    <button><a href="#footer"><span>Get in touch</span></a></button>
+                </p>
+                <img src="./images/profilepic.jpg" alt="Profile picture" loading=lazy>
+            </div>
+            <div class="about-decor">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4"></div>
+                <div class="line5"></div>
+                <div class="line6"></div>
+                <div class="line7"></div>
+                <div class="line8"></div>
+                <div class="line9"></div>
+                <div class="line10"></div>
+                <div class="line11"></div>
+                <div class="line12"></div>
+            </div>
+        </section>
+        <div class="skillsnproj">
+            <section class="skills" id="skills">
+                <h2>Skills</h2>
+                <div class="skillsunderline"></div>
+                <div class="skills-container"></div>
+                <div class="caret">
+                    <button><a><span>View more</span></a></button>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <h2>Projects</h2>
+                <div class="projectsunderline"></div>
+                <div class="projects-container">
+                    <!-- Planning to add a filterable container with categories once I have enough projects -->
+                    <p>I like designing responsive websites and am currently learning popular frameworks. I also do like exploring the field of robotics.<br><br>Here are a few projects (More coming soon): 
+                    </p>
+                    <div class="project-tiles"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="footer">
+        <h3>Get in Touch</h3>
+        <div class="footunderline"></div>
+        <p>You can email me at <span id="mail">darshanks.work@gmail.com</span>. I generally respond within a day. You can also reach me through my socials:</p>
+        <div class="social">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=darshanks.work@gmail.com&su=SUBJECT&body=BODY&bcc=darshanks.work@gmail.com" target="_blank" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com/in/darshan-k-s/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://github.com/darshan-k-s" target="_blank" class="fa fab fa-github"></a>
+            <!-- Please don't feel bad if I don't accept you request on Instagram. -->
+            <a href="https://www.instagram.com/darshan_k_5/" target="_blank" class="fa fa-instagram instacolor"></a>
+        </div>
+        <p class="copyright">&copy; Darshan K S | <span id="yr"></span></p>
+    </footer>
+    
+    <script>$("#yr").text(new Date().getFullYear());</script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
