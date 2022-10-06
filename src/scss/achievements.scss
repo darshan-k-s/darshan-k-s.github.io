@@ -1,0 +1,146 @@
+@import "./mixins";
+
+.achievements{
+    box-sizing: border-box;
+    padding: 10vh 6vw;
+    @include flexMix(column, flex-start, center);
+
+    height: fit-content !important;
+
+    .line{
+        margin: 4vh 0;
+    }
+
+    .achcontent{
+        width: 100vw;
+        
+        .hover-underline-animation{
+            color: $foreignAccent;
+            @media only screen and (max-width: 450px){
+            }
+        }
+        
+        .achdesc{
+            margin: 4vh 0;
+            // height: 50vh;
+            height: fit-content !important;
+
+            font-size: 74%;
+            @include flexMix(row, space-between, center);
+
+            @media only screen and (max-width: 1300px){
+                font-size: 0.64em !important;
+            }
+            @media only screen and (max-width: 920px){
+                font-size: 0.56em !important;
+                height: 36vh;
+            }
+            @media only screen and (max-width: 850px){
+                .head h5{
+                    display: none;
+                } 
+            }
+            @media only screen and (max-width: 690px){
+                @include flexMix(column, space-between, center);
+                
+                height: 80vh;
+
+                .image1{
+                    height: 30vh !important;
+                    width: 100% !important;
+                    background-size: contain !important;
+                }
+                .achtext{
+                    width: 90% !important;
+                    height: 40vh !important;
+                }
+            }
+
+            @media only screen and (max-width: 450px){
+                font-size: 0.46em !important;
+                .image2{
+                    height: 6vh !important;
+                    width: 100% !important;
+                    background-size: 8% !important;
+                }
+                .links a{
+                    font-size: 0.5em !important;
+                    margin: 12px !important;
+                }
+            }
+
+            width: 100%;
+            background-color: $primary2;
+            .image1{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 30%;
+                height: 40vh;
+                margin: 0 4vw;
+            }
+
+            .achtext{
+                @include flexMix(column, flex-start, flex-start);
+                width: 60%;
+                min-height: 70%;
+                height: fit-content !important;
+                padding: 12px;
+                .head{
+                    width: 100%;
+                    @include flexMix(row, space-between, center);
+                    padding: 0 24px;
+                }
+                .line{
+                    margin-left: 24px;                    
+                }
+                h6{
+                    padding: 24px;
+                    a{
+                        font-size: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 690px){
+        h1{
+            font-size: 10vw !important;
+        } 
+        .achcontent{
+            .achdesc{
+                flex-direction: column !important;
+                margin: 10vh 0 !important;
+                .achtext{
+                    padding-top: 10vh !important;
+                }
+                .image1{
+                    z-index: 1000 !important;
+                    margin-bottom: -6vh !important;
+                    height: 50vh !important;
+                    max-width: 80vw !important;
+                }
+            }
+        }
+    }
+
+
+    .head h2 {        
+        display: inline-block;
+        position: relative;
+    }
+    
+    .head h2:after {
+    content: "";
+        position: absolute;
+        width: 24%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $foreignAccent;
+
+    }
+}
+
+

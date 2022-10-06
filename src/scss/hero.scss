@@ -1,0 +1,109 @@
+@import "./mixins";
+
+.hero{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    @include flexMix(column, flex-start, center);
+    .navbar{
+        box-sizing: border-box;
+        // height: 10vh;
+        width: 100%;
+        @include flexMix(row, space-between, center);
+        padding: 3.2vh 4vh;
+        .navLinks{
+            @include flexMix();
+            & > *{
+                margin: 0 8px;
+            }
+            a:hover{
+                color: $foreignAccent;
+            }
+            .verticalLine{
+                background-color: $foreignAccent;
+                height: 32px;
+                width: 2px;
+            }
+        }
+    }
+    .content{
+        @media only screen and (max-width: 520px) {
+            font-size: 80% !important;
+        }
+        @include flexMix(column);
+        height:64%;
+        h1{
+            background: none;
+            animation: gradientAni 20s infinite;
+        }
+        h2{
+            font-size: 70% !important;
+            margin: 2% 0;
+        }
+        h5{
+            margin: 6% 0;
+            width: 100%;
+            text-align: center !important;
+            span{
+                font-weight: 700;
+                animation: typing 1s infinite;
+            }
+        }
+    }
+}
+
+@keyframes typing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+@keyframes gradientAni {
+    0% {
+        background: none;
+    }
+    50% {
+        background: -webkit-linear-gradient(0deg, #c0392b, #8e44ad);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        // text-shadow: #000 0px 2px 16px;
+    }
+    100% {
+        background: none;
+    }
+}
+
+@keyframes arrowDown {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0;
+        transform: translate(0, 10vh);
+    }
+    100% {
+        opacity: 100%;
+        transform: translate(0, 0vh);
+    }
+}
+
+.downArrow{
+    @include flexMix();
+    width: 100%;
+    font-size: 100%;
+    color: $foreignAccent;
+    position: absolute;
+    bottom: 24px;
+    & > *{
+        transform: rotateZ(-90deg);
+
+    }
+
+    animation: arrowDown 6s forwards;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}

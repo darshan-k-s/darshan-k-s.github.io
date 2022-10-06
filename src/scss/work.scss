@@ -1,0 +1,78 @@
+@import "./mixins";
+
+.work{
+    box-sizing: border-box;
+    padding: 10vh 6vw;
+    margin-top: 10vh;
+    @include flexMix(column, center, center);
+    height: fit-content !important;
+
+    h1{
+        width: 100%;
+        text-align: center;        
+        @media only screen and (max-width: 650px){
+            font-size: 10vw;
+        }
+    }
+    .line{
+        margin: 24px 0;
+        margin-bottom: 10vh;
+    }
+    .works{
+        @include flexMix(column, center, center);
+        width: 80vw;
+        font-size: 80%;
+        .workblock{
+            @include flexMix(column, center, center);
+            .sqwigglyLine{
+                margin: 2.4vh 0;       
+            }
+        }
+        .worksection{
+            margin: 4vh 0;
+            @include flexMix(row, center, flex-start);
+            
+            @media only screen and (max-width: 560px){
+                flex-direction: column !important;
+                align-items: center !important; 
+                justify-content: center !important;   
+            }
+
+            a{
+                @media only screen and (max-width: 770px){
+                    img{
+                        width: 6em;
+                    }
+                }
+            }
+
+            .workdetails{
+                @media only screen and (max-width: 560px){
+                    margin: 6vh 4vw !important;
+                    text-align: left !important;
+                }
+                @media only screen and (max-width: 420px){
+                    font-size: 80%;
+                }
+                h2{
+                    margin-bottom: 1vh;
+                }
+                h4, h5{
+                    font-style: italic;
+                    color: $foreignAccent !important;
+                    font-size: 40%;
+                }
+                h6{
+                    margin-top: 2.4vh;
+                    font-weight: 400;
+                }
+                h5{
+                    font-size: 32%;
+                    font-weight: 300;
+                }
+            }
+
+        }
+    }
+
+}

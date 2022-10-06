@@ -1,0 +1,31 @@
+@import "./mixins";
+
+  #progress {
+    scale: 0.6;
+    position: fixed;
+    right: -10px;
+    bottom: -10px;
+    transform: rotate(-90deg);
+    @media only screen and (max-width: 560px){
+      display: none;
+    }
+  }
+  
+  circle {
+    stroke-dashoffset: 0;
+    stroke-width: 15%;
+    fill: none;
+  }
+  
+  .bg {
+    stroke: #fafafa;
+    
+    opacity: 0.3;
+  }
+  
+  #progress .indicator {
+    stroke: -webkit-linear-gradient(40deg, #c0392b, #8e44ad);
+    stroke: $foreignAccent;
+    opacity: 0.8;
+  }
+  

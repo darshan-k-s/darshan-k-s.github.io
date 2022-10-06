@@ -1,0 +1,140 @@
+@import "./mixins";
+
+.projects{
+    box-sizing: border-box;
+    padding: 10vh 6vw;
+    @include flexMix(column, flex-start, center);
+
+    height: fit-content !important;
+
+    @media only screen and (max-width: 680px){
+        h1{
+            font-size: 10vw !important;
+        } 
+        .fadeh5{
+            font-size: 4vw !important;
+        }   
+    }
+
+    .fadeh5{
+        font-size: 36%;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.64) !important;
+        margin-bottom: 4vh;
+    }
+    .sqwigglyLine{
+        margin-top: -4vh;
+    }
+
+    .projectcontent{
+        width: 80vw;
+        
+        @media only screen and (max-width: 1030px){
+            width: 90vw;
+        }
+        
+        .projdesc{
+            margin: 4vh 0;
+            height: 40vh;
+            font-size: 74%;
+            @include flexMix(row, space-between, center);
+
+            @media only screen and (max-width: 1300px){
+                font-size: 0.64em !important;
+            }
+            @media only screen and (max-width: 920px){
+                font-size: 0.56em !important;
+                height: 36vh;
+            }
+            @media only screen and (max-width: 850px){
+                .head h5{
+                    display: none;
+                } 
+            }
+            @media only screen and (max-width: 680px){
+                @include flexMix(column, space-between, center);
+                
+                height: 80vh;
+
+                .image1{
+                    height: 30vh !important;
+                    width: 100% !important;
+                    background-size: contain !important;
+                }
+                .image2{
+                    height: 10vh !important;
+                    width: 100% !important;
+                    background-size: 8% !important;
+                }
+                .projtext{
+                    width: 90% !important;
+                    height: 40vh !important;
+                }
+            }
+
+            @media only screen and (max-width: 450px){
+                font-size: 0.5em !important;
+                .image2{
+                    height: 6vh !important;
+                    width: 100% !important;
+                    background-size: 8% !important;
+                }
+                .links a{
+                    font-size: 0.5em !important;
+                    margin: 12px !important;
+                }
+            }
+            @media only screen and (max-width: 450px){
+                font-size: 0.46em !important;
+
+            }
+
+            width: 100%;
+            background-color: $primary2;
+            .image1{
+                background-color: #000 !important;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 30%;
+                height: 100%;
+            }
+
+            .projtext{
+                @include flexMix(column, flex-start, flex-start);
+                width: 60%;
+                height: 40vh;
+                padding: 12px;
+                .head{
+                    width: 100%;
+                    @include flexMix(row, space-between, center);
+                }
+                .line{
+                    margin-left: 24px;                    
+                }
+                h6{
+                    padding: 24px;
+                }
+                .links{
+                    @include flexMix(row, space-between, center);
+                    .separator{
+                        font-size: 50%;
+                    }
+                    a{
+                        margin: 0 24px;
+                        color: $foreignAccent;
+                    }
+                }
+            }
+            .image2{
+                height: 100%;
+                width: 10%;
+                background-color: rgba(0,0,0, 0.36) !important;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 80%;
+                opacity: 0.8 !important;
+            }
+        }
+    }
+}

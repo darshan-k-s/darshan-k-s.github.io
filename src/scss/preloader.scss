@@ -1,0 +1,39 @@
+@import "../scss/mixins";
+
+.preLoader{
+    z-index: 1000;
+    position: fixed;
+    background-color: $surface;
+    width: 100vw;
+    height: 100vh;
+    @include flexMix(column, center, center);
+    .line{
+        width: 160px;
+        height: 3px;
+        background-color: $textPrimary;
+        margin: 8px 0;
+    }
+    p{
+        margin: 8px 0;
+    }
+    .loaderLogo{
+        margin: 16px 0;
+    }
+
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.44,.67,.83,.48);
+}
+
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+

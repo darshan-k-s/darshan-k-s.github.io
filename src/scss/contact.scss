@@ -1,0 +1,183 @@
+@import "./mixins";
+
+#contact{
+    box-sizing: border-box;
+    padding: 10vh 6vw;
+    @include flexMix(column, flex-start, flex-start);
+
+    h1{
+        text-align: center;
+        width: 100%;
+        @media only screen and (max-width: 500px) {
+            font-size: 0.6em;
+        }
+    }
+    .line{
+        align-self: center;
+        justify-self: flex-start;
+        margin: 2vh 0;
+    }
+    .contactsection{
+        box-sizing: border-box !important;
+        width: 100%;
+        @include flexMix(row, space-between , flex-start);
+        margin: 8vh 0; ////
+
+        @media only screen and (max-width: 800px) {
+            @include flexMix(column, space-between , center);
+            .social{
+                padding-top: 8vh;
+            }
+        }
+
+        @media only screen and (max-width: 560px) {
+            font-size: 0.64em;
+        }
+
+        h6{
+            color: $foreignAccent !important;
+            width: 50vw;
+            font-weight: 400;
+            #mail{
+                cursor: pointer;
+                color: $secondary;
+                text-decoration: none;
+                background-color: rgba($color: #000000, $alpha: 0);
+                padding: 0;
+                margin: 0;
+                border: 0;
+                transition: width 5s;
+                &::after {
+                    content: '';
+                    width: 0px;
+                    height: 1px;
+                    display: block;
+                    background: $secondary;
+                    transition: 300ms;
+                  }
+                  
+                  &:hover::after {
+                    width: 100%;
+                  }
+            }
+        }
+
+        .social{
+            height: 100px;
+            @include flexMix(row, center , center);
+            a{
+
+                @include flexMix(column, center, space-between);
+
+                font-size: 36px;
+                margin: 8px 8px;
+                padding: 12px;
+                text-decoration: none;
+                transition: transform 0.4s ease-in-out;
+                box-sizing: border-box;
+
+                &:hover {
+
+                    transition: transform 0.4s ease-in-out;
+                    opacity: 0.95;
+                    transform: translateY(-4px);
+                }
+            }
+            
+            .gmail {
+                background: #dd4b39;
+                color: white;
+                &::after {
+                    content: "Mail";
+                    font-size: 8px;
+                    display: none;
+                    width: 100%;
+                    text-align: center;
+                    padding-top: 2px !important;
+                }
+                &:hover::after {
+                    display: inline;
+                }
+            }
+            .lin {
+                background: #007bb5;
+                color: white;
+                &::after {
+                    content: "LinkedIn";
+                    font-size: 8px;
+                    display: none;
+                    width: 100%;
+                    text-align: center;
+                    padding-top: 2px !important;
+
+                }
+                &:hover::after {
+                    display: inline;
+                }
+            }
+            .ghub {
+                // background: #007bb5;
+                background: #000;
+                color: white;
+                &::after {
+                    content: "GitHub";
+                    font-size: 8px;
+                    display: none;
+                    width: 100%;
+                    text-align: center;
+                    padding-top: 2px !important;
+
+                }
+                &:hover::after {
+                    display: inline;
+                }
+            }
+            .resume {
+                background: rgba(202, 222, 252, 1);
+                color: #46474B;
+                &::after {
+                    content: "Resume";
+                    font-size: 8px;
+                    display: none;
+                    width: 100%;
+                    text-align: center;
+                    padding-top: 2px !important;
+
+                }
+                &:hover::after {
+                    display: inline;
+                }
+            }
+              
+
+        }
+    }
+}
+
+.trademark{
+    color: $foreignAccent !important;
+    position: relative;
+    bottom: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.ant-message{
+    font-size: 16px;
+}
+
+
+.ant-message-notice{
+    .ant-message-notice-content{
+        background-color: $primary2;
+        color: #fff;
+        box-shadow: 0 8px 8px rgb(0, 0, 0);
+        border-radius: 4px;
+        .ant-message-success{
+            .anticon{
+                color: $foreignAccent;
+            }
+        }
+    }
+}
