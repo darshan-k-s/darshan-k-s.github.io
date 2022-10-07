@@ -4,7 +4,7 @@ const work = [
         company: "Project MANAS",
         title: "Sensing and Automation division member",
         duration: "May 2021 - Present",
-        description: "Senior member at Manipal University's official AI and Robotics team. Represented the University in an international UAV competition and worked on the self driving car project in the team.",
+        description: "Senior member at Manipal University's official AI and Robotics team. Represented the University in an international UAV competition and worked on the self-driving car project in the team.",
         imgsrc: "manas.webp",
         site: "https://www.projectmanas.in/"
     },

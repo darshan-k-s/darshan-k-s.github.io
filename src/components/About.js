@@ -72,10 +72,10 @@ function Desc(){
         viewport={{once: true}}
       >
         <h4 style={{fontSize: "1.34em", fontWeight: "300"}}>
-          I’m a Robotics enthusiast and a front-end web developer, passionate to develop human centric products. 
+        I’m a Robotics enthusiast and a front-end web developer, passionate about developing human-centric products.
         </h4>
       <br/>
-      I’m currently a 3rd year student at the <a className="hover-underline-animation mit" href="https://manipal.edu/mit.html" target="_blank" rel="noreferrer">Manipal Institute of Technology</a> majoring in Computer Science and Engineering.
+      I’m a 3<sup>rd</sup> year student at the <a className="hover-underline-animation mit" href="https://manipal.edu/mit.html" target="_blank" rel="noreferrer">Manipal Institute of Technology</a> majoring in Computer Science and Engineering.
       
       <br/>
       I get psyched about robotic motion planning and control and am really into incorporation automation into daily life.

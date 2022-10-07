@@ -73,7 +73,9 @@
             }
 
             @media only screen and (max-width: 450px){
-                font-size: 0.5em !important;
+                font-size: 0.46em !important;
+                // ///////////////////////
+                height: fit-content !important;
                 .image2{
                     height: 6vh !important;
                     width: 100% !important;
@@ -83,10 +85,6 @@
                     font-size: 0.5em !important;
                     margin: 12px !important;
                 }
-            }
-            @media only screen and (max-width: 450px){
-                font-size: 0.46em !important;
-
             }
 
             width: 100%;
