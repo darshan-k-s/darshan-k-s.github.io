@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c8482902.css",
-    "main.js": "/static/js/main.baa7989d.js",
+    "main.js": "/static/js/main.d25209b3.js",
     "static/media/dp.webp": "/static/media/dp.1506f95aa8a7e63af668.webp",
     "static/media/Resume.pdf": "/static/media/Resume.4922c9d7df1acd282c9f.pdf",
     "static/media/eve.webp": "/static/media/eve.96295d2b58cc6aa6f4e2.webp",
@@ -10,6 +10,7 @@
     "static/media/rosLogo.webp": "/static/media/rosLogo.439fd88c73216f7fc254.webp",
     "static/media/manasgui.webp": "/static/media/manasgui.afcc3f883df032f61c4b.webp",
     "static/media/auvsiLogo.webp": "/static/media/auvsiLogo.5b9fc31751bab30c68cf.webp",
+    "static/media/rbccps.png": "/static/media/rbccps.bdb87aff2125873160c4.png",
     "static/media/groceryBud.webp": "/static/media/groceryBud.2593fa3745f1baee49f8.webp",
     "static/media/manas.webp": "/static/media/manas.e6c024b90c1f5e6b6966.webp",
     "static/media/formi.webp": "/static/media/formi.a6a61be2e63bfa264565.webp",
@@ -17,10 +18,10 @@
     "static/media/jsLogo.webp": "/static/media/jsLogo.9f2349488ecd44cbd71a.webp",
     "static/media/logo.svg": "/static/media/logo.723f337c89d954c216a5.svg",
     "main.c8482902.css.map": "/static/css/main.c8482902.css.map",
-    "main.baa7989d.js.map": "/static/js/main.baa7989d.js.map"
+    "main.d25209b3.js.map": "/static/js/main.d25209b3.js.map"
   },
   "entrypoints": [
     "static/css/main.c8482902.css",
-    "static/js/main.baa7989d.js"
+    "static/js/main.d25209b3.js"
   ]
 }
